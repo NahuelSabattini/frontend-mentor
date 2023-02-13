@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    height: 100vh;
+    width: 100vw;
+    background-color: #F3EAE3;
+}
+
+
+.card-container {
+    display: inherit;
+    width: 40vw;
+    height: auto;
+    border-radius: 20px;
+}
+
+.chanel{
+    width: 50%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+
+.container-information{
+    width: 50%;
+    padding: 2em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+}
+
+.title{
+    font-size: 0.8em;
+    padding-bottom: 2em;
+    letter-spacing: 0.25em;
+}
+
+.title-principal{
+    padding-bottom: 0.5em;
+    font-size: 3em;
+    word-wrap: break-word;
+}
+
+.description{
+    padding: 1.5em 0;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.container-prices * {
+    display: inline;
+}
+
+.price-principal{
+    color: #3B8269;
+    font-size: 2.5em;
+    margin-right: 0.5em;
+}
+
+.sub-price{
+    text-decoration:line-through;
+    position: relative;
+    bottom: 0.5em;
+    font-size: 1em;
+}
+
+.add-to-cart{
+    width: 100%;
+    margin-top: 1.6em;
+    padding: 1em 0;
+    border-radius: 0.8em;
+    background-color: #3D8168;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 0;
+    cursor: pointer;
+}
+
+.bxs-cart-add{
+    position: relative;
+    margin-right: 0.3em;
+    top: 0.2em;
+    color: white;
+    font-size: 1.4em;
+}
+
+@media (max-width: 914px) {
+
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #F3EAE3;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .chanel{
+        width: 90%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        object-fit: cover;
+    }
+
+
+    .container-information{
+        width: 90%;
+        /* width: 50vw;
+        height: auto; */
+        padding: 2em;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-color: white;
+    }
+}
+
+
+

@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0D1A2D;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    width: 22vw;
+    height: auto;
+    border-radius: 1em;
+    background-color: #15273F;
+}
+
+.cubo{
+    width: auto;
+    height: 20em;
+    /* height: ; */
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.title{
+    margin: 1.2em 0;
+    color: white;
+}
+
+.title:hover{
+    cursor: pointer;
+    color: #0CFCF8;
+}
+
+.cubo{
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5));
+}
+
+.name:hover{
+    cursor: pointer;
+    color: #0CFCF8;
+}
+
+.text, .date{
+    color: #8BB0DC;
+    margin: 0 0 1.5em 0;
+    font-size: 1.2em;
+}
+
+.cripto, .date{
+    display: inline-block;
+    font-size: 1.2em;
+    word-wrap: break-word;
+}
+
+.value-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.avatar{
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.cripto{
+    color: #0CFCF8;
+    margin: 0 0 1.5em 0;
+}
+
+.value-date > *{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.value-date i{
+    margin-right: 0.2em;
+}
+
+.author-container{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid #263850;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-top: 2em;
+    color: #8BB0DC;
+}
+
+.author-container img{
+    border: 2px solid white;
+}
+
+.author-container span{
+    color: white;
+}
+
+
+@media (max-width: 1285px) {
+    .card{
+        width: 44vw;
+    } 
+}
+
+
+@media (max-width: 675px) {
+    .card{
+        width: 80vw;
+    } 
+}
